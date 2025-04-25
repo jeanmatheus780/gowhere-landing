@@ -13,29 +13,30 @@ export default function LandingPage() {
 
       {/* Seção de imagem */}
       <section style={{ textAlign: "center", marginTop: "4rem" }}>
-        <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Conheça o GoWhere</h2>
-        <div style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          overflow: "hidden",
-          borderRadius: "12px",
-          maxWidth: "90%",
-          margin: "0 auto",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
-        }}>
-          <Image
-            src="/images/Logotipo GoWhere.png"
-            alt="Banner do GoWhere"
-            width={1000}
-            height={500}
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </div>
-      </section>
+  <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Conheça o GoWhere</h2>
+  <div style={{
+    position: "relative",
+    width: "100%",
+    maxWidth: "800px",
+    margin: "0 auto",
+    borderRadius: "12px",
+    overflow: "hidden",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.1)",
+  }}>
+    <Image
+      src="/images/Logotipo GoWhere.png"
+      alt="Banner do GoWhere"
+      width={800}
+      height={400}
+      style={{
+        width: "100%",
+        height: "auto",
+        display: "block",
+      }}
+      priority
+    />
+  </div>
+</section>
 
       <section style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", gap: "2rem", marginTop: "4rem" }}>
         <FeatureCard
